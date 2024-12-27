@@ -6,7 +6,7 @@ const genAI = new GoogleGenerativeAI("Your_Gemini_API"); //your Gemini API
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 // Add your OpenWeatherMap API key here
-const weatherApiKey = '5dcce3506bcc65a3b0d2a40d2f8ba5ad';
+const weatherApiKey = 'Your_Weather_Api';
 
 async function getWeather(location) {
     const weatherApiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${weatherApiKey}&units=metric`;
